@@ -1,5 +1,7 @@
 server:
   port: 9999
+  servlet:
+    context-path: /druid
 
 #日志输出配置
 logging:
@@ -15,3 +17,13 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  thymeleaf:
+    servlet:
+      content-type: text/html;
+    suffix: .html
+    prefix: classpath:/templates/
+    encoding: UTF-8
+    mode: HTML5
+    cache: false
+  mvc:
+      static-path-pattern: /**

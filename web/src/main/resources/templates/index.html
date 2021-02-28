@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>基金股票爬虫</title>
+</head>
+<body>
+<div class="container">
+    <ul class="cbp_tmtimeline">
+        <li th:each="o:${list}">
+            <p th:text="${o.name}"></p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
